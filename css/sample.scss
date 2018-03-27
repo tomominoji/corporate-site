@@ -220,6 +220,13 @@ header{
 
   padding-top:20px;
 
+h3 {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
   @media (min-width: 550px) {
     padding-top: 30px;
   }
@@ -235,6 +242,7 @@ header{
       font-weight: bold;
       margin-top: 8px;
     }
+    
 
     p{
 
@@ -260,6 +268,7 @@ header{
   // .columns
 
 }
+
 // #service_area
 
 #news_area{
@@ -478,9 +487,6 @@ h1{
 
 
 
-
-
-
 div{
   display:block;
 }
@@ -531,7 +537,7 @@ div{
   }
    
   #main{
-     
+    
     h2{
      color:$blue1;
      border-bottom: 3px solid $blue1;
@@ -543,6 +549,10 @@ div{
      -webkit-margin-after: 0.83em;
      -webkit-margin-start: 0px;
      -webkit-margin-end: 0px;
+     
+     .company_title{
+       margin-bottom: 0px;
+     }
     } 
     ul.news_li{
        font-size: 1.5rem;
@@ -558,8 +568,12 @@ div{
            font-weight: bold;
            margin-bottom: 3px;
          }
+         table{
+           border-color: grey;
+         }
        }
     }
+  
      @media(min-width: 550px){
      padding-right: 20px;
      
@@ -571,7 +585,7 @@ div{
        font-weight: bold;
      
        .company_title{
-         margin-bottom: 0px;
+        
          color: #42b9d0;
          border-bottom: 3px solid #42b9d0;
          font-size: 1.5rem;
