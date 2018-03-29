@@ -531,9 +531,12 @@ div{
 
 #contents{
   padding-top:20px;
+  
+  
   @media (min-width: 550px){
     padding-top: 35px;
     padding-bottom: 70px;
+    
   }
    
   #main{
@@ -545,12 +548,15 @@ div{
      font-weight: bold;
      padding-bottom: 15px;
      display: block;
-     margin-bottom: 0px;
+    }
      
      .company_title{
        margin-bottom: 0px;
      }
-    } 
+    
+     
+     
+    
     ul.news_li{
        font-size: 1.5rem;
        
@@ -564,6 +570,10 @@ div{
            display: inline-block;
            font-weight: bold;
            margin-bottom: 3px;
+           
+           @media(max-width:550px){
+              display:block;
+           }
          }
       
        }
@@ -572,13 +582,16 @@ div{
   table.u-full-width {
 th{
 color: #626262;
+font-size: 1.4rem;
+padding-right: 20px;
 }
 td{
 color: #626262;
 padding:20px 0px;
+font-size: 1.4rem;
 }
 }
-     @media(min-width: 550px){
+@media(min-width: 550px){
      padding-right: 20px;
      
      h2{
@@ -587,31 +600,27 @@ padding:20px 0px;
        color: #42b9d0;
        border-bottom: 3px solid #42b9d0;
        font-weight: bold;
-      margin-bottom:0px;
-  
-
-     
-       .company_title{
-        margin-bottom:0px;
+     }
+     .company_title{
+        margin-bottom: 0px;
          color: #42b9d0;
          border-bottom: 3px solid #42b9d0;
-         font-size: 1.5rem;
+         font-size: 2rem;
          font-weight: bold;
-         padding-bottom: 15px;
-       }
-     }
-     
+         padding-bottom: 20px;
+      }
      .news_li li{
        list-style: none;
        padding-bottom: 5px;
        
        span{
-        display: inline-block;
+        display:inline-block;
         margin-bottom: 0;
         padding-right: 10px;
        }
      }
-    table{
+     
+     table{
       display: table;
       border-color: grey;
       
@@ -639,9 +648,10 @@ padding:20px 0px;
         }  
       }
       
-    } 
+     } 
    }
   }
+
   //#main
   
   #sidebar{
@@ -662,8 +672,7 @@ padding:20px 0px;
         padding: 15px;
         margin-bottom: 0px;
         display: block;
-        -webkit-margin-before: 1em;
-        -webkit-margin-after: 1em;
+      
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
       }
