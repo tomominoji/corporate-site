@@ -295,10 +295,7 @@ div {
     font-weight: bold;
     padding-bottom: 15px;
     display: block;
-    -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px; }
+    margin-bottom: 0px; }
     #contents #main h2 .company_title {
       margin-bottom: 0px; }
   #contents #main ul.news_li {
@@ -309,11 +306,14 @@ div {
       text-align: -webkit-match-parent; }
       #contents #main ul.news_li li span {
         color: #42b9d0;
-        display: block;
+        display: inline-block;
         font-weight: bold;
         margin-bottom: 3px; }
-      #contents #main ul.news_li li table {
-        border-color: grey; }
+  #contents #main table.u-full-width th {
+    color: #626262; }
+  #contents #main table.u-full-width td {
+    color: #626262;
+    padding: 20px 0px; }
   @media (min-width: 550px) {
     #contents #main {
       padding-right: 20px; }
@@ -322,8 +322,10 @@ div {
         padding-bottom: 20px;
         color: #42b9d0;
         border-bottom: 3px solid #42b9d0;
-        font-weight: bold; }
+        font-weight: bold;
+        margin-bottom: 0px; }
         #contents #main h2 .company_title {
+          margin-bottom: 0px;
           color: #42b9d0;
           border-bottom: 3px solid #42b9d0;
           font-size: 1.5rem;
@@ -351,7 +353,7 @@ div {
               padding-right: 20px;
               font-weight: bold; }
             #contents #main table tbody tr th, #contents #main table tbody tr td {
-              padding: 20px 0;
+              padding: 20px 20px 20px 0px;
               color: #626262;
               font-size: 1.4rem;
               display: table-cell;
